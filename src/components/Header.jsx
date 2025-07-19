@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import FindProducts from '../ButtonDescription/FindProduct';
 const Header = () => {
   return (
     <header className="font-sans px-5 py-5 md:px-7 md:py-7 ">
@@ -13,12 +14,7 @@ const Header = () => {
         <Link to="/about">About</Link>
         </ul>
         <div className="flex items-end gap-3 lg:gap-5">
-          <input
-            type="text"
-            className="placeholder-black  bg-[#7ED957]  outline-none px-2 py-2 rounded-2xl lg:px-5 lg:text-[1rem] text-[0.8rem] "
-            placeholder="Search to Order"
-          />
-          <button className=" bg-[#7ED957]  outline-none px-5 py-2 rounded-2xl lg:text-[1rem] text-[0.8rem] cursor-pointer">Enter</button>
+         <FindProducts/>
         </div>
       </nav>
     </header>
