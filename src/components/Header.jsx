@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 const Header = () => {
   return (
     <header className="font-sans px-5 py-5 md:px-7 md:py-7 ">
@@ -5,13 +6,11 @@ const Header = () => {
         <div>
           <h1 className="text-white text-5xl font-bold md:text-6xl cursor-default">
             Matcha<span className="text-black text-2xl">thea</span>
-          </h1>
+          </h1> 
         </div>
-        <ul className="text-white text-[1.1rem] flex flex-row items-end gap-3 lg:text-2xl :gap-7 cursor-pointer w-full justify-around  sm:flex-row   ">
-          <li>Home</li>
-          <li>About</li>
-          <li>Cart</li>
-          <li>Favorites</li>
+        <ul className="text-white text-[1.1rem] flex flex-row items-end gap-3 lg:text-2xl :gap-7 cursor-pointer w-full justify-around  sm:flex-row  ">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         </ul>
         <div className="flex items-end gap-3 lg:gap-5">
           <input
