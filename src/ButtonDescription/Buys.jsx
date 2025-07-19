@@ -1,0 +1,13 @@
+const Buys = ({children, className}) => {
+    function handleClick () {
+        alert('Thanks for buying proceed to payment')
+    }
+    return(
+        <button
+        onClick={handleClick}
+        className={`bg-[#4e9622] w-[100px] py-1 rounded-3xl text-[1.2rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 ${className}`}>
+            {children}
+        </button>
+    );
+};
+export default Buys;

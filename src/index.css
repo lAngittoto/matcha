@@ -4,24 +4,3 @@ body{
  
 }
 
-.fa-facebook{
- font-size: 3rem;
- color: blue;
- background-color: white;
- border-radius: 50px;
- cursor: pointer;
-}
-.fa-tiktok{
- font-size: 3rem;
- color: white;
- background-color: black;
- border-radius: 50px;
- cursor: pointer;
-}
-.fa-square-instagram{
- font-size: 3rem;
- color: rgb(185, 3, 209);
- background-color: white;
- border-radius: 10px;
- cursor: pointer;
-}
