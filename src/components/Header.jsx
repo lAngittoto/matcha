@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import FindProducts from '../ButtonDescription/FindProduct';
+import FindProducts from '../Buttons/FindProduct';
 const Header = () => {
   return (
     <header className="font-sans px-5 py-5 md:px-7 md:py-7 ">

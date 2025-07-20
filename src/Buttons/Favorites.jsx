@@ -5,7 +5,7 @@ const Favorites = ({children, className}) => {
     return(
         <button
         onClick={handleClick}
-        className={` cursor-pointer flex justify-start text-2xl ${className}`}
+        className={` cursor-pointer flex justify-start text-2xl md:text-[1rem] ${className}`}
         >
             {children}
         </button>

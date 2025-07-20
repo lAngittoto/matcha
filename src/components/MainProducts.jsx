@@ -6,7 +6,7 @@ const MainProducts = () => {
       <h1 className="px-10 py-10 text-3xl text-white">
         Classic & Pure <span className="text-black text-2xl">Buy 1 take 1</span>
       </h1>
-      <div className="flex flex-row justify-between px-5">
+      <div className="flex flex-col lg:flex-row justify-around px-5 md:justify-baseline md:flex-row sm:flex-col gap-5 lg:gap-2">
       <ClassicPure
         matchaProduct={{
           image:

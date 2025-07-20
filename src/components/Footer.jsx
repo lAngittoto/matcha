@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
           </section>
           <section className="px-7">
-            <div className="lg:w-[400px] h-[150px] bg-[#7ED957] p-7 flex flex-col justify-center items-center rounded-2xl cursor-default md:w-[350px] ">
+            <div className="lg:w-[400px] lg:h-[130px] bg-[#7ED957] p-7 flex flex-col justify-center items-center rounded-2xl cursor-default md:w-[350px] md:h-[120px]">
                  <h1 className="lg:text-4xl md:text-3xl text-5xl">"Green energy, <span className="text-green-800">clean mind,</span> <span className="text-white">matcha soul."</span></h1>
             </div>    
           </section>
