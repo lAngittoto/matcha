@@ -1,22 +1,38 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const FindProducts = () => {
-    const [selectedOption, setSelectedOption] = useState ("");
-    const handleEnterClick = () => {
-        console.log("Selected:", selectedOption)
-        setSelectedOption("");
-        
-    };
+const FindProducts = ({ onEnter }) => {
+  const [selectedOption, setSelectedOption] = useState("");
+  const navigate = useNavigate();
+
+  const handleEnterClick = () => {
+    console.log("Selected:", selectedOption);
+    if (onEnter) {
+      onEnter(selectedOption);
+    }
+
+      navigate("/classic-pure");
+    
+    setSelectedOption("");
+  };
+
   return (
     <>
-        <select name="" id="" className="placeholder-black  bg-[#7ED957]  outline-none px-2 py-2 rounded-2xl lg:px-5 lg:text-[1rem] text-[0.8rem] w-[250px] cursor-pointer" 
+      <select
         value={selectedOption}
-            onChange={(e) => setSelectedOption(e.target.value)}>
-            <option value="" disabled selected className="text-black">Find Order</option>
-            <option value="ClassicPure">Classic and Pure</option>
-        </select>
-          <button className=" bg-[#7ED957]  outline-none px-5 py-2 rounded-2xl lg:text-[1rem] text-[0.8rem] cursor-pointer" onClick={handleEnterClick}>Enter</button>
-  </>
+        onChange={(e) => setSelectedOption(e.target.value)}
+        className="placeholder-black bg-[#7ED957] outline-none px-2 py-2 rounded-2xl lg:px-5 lg:text-[1rem] text-[0.8rem] w-[250px] cursor-pointer"
+      >
+        <option value="" disabled>Find Order</option>
+        <option value="ClassicPure">Classic and Pure</option>
+      </select>
+      <button
+        className="bg-[#7ED957] outline-none px-5 py-2 rounded-2xl lg:text-[1rem] text-[0.8rem] cursor-pointer active:bg-white"
+        onClick={handleEnterClick}
+      >
+        Enter
+      </button>
+    </>
   );
 };
 

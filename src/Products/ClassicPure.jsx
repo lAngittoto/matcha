@@ -1,6 +1,7 @@
 import Buys from "../Buttons/Buys";
 import AddCarts from "../Buttons/AddCarts";
 import Favorites from "../Buttons/Favorites";
+
 function ClassicPure({ matchaProduct }) {
   return (
     <>
