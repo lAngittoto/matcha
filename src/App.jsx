@@ -6,6 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import MainProducts from './components/MainProducts'
 import ClassicPureP from './ShowProducts/ClassicPureP'
+import FlavoredMatchaP from './ShowProducts/FlavoredMatchaP'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route path="/" element={<><Home/><Footer/><MainProducts/></>} />
     <Route path='/about'element={<About/>} />
     <Route path='/classic-pure' element={<ClassicPureP/>} />
+    <Route path='/flavored-matcha' element={<FlavoredMatchaP/>} />
       
    </Routes>
 

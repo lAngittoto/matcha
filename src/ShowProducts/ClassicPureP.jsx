@@ -31,7 +31,7 @@ const ClassicPureP = () => {
         }}
       />
       </div>
- 
+      
     </div>
   );
 };
