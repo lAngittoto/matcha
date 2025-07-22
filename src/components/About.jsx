@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <>
@@ -17,7 +17,7 @@ const About = () => {
           </div>
           <div><img src="https://img.freepik.com/premium-vector/simple-matcha-tea-bowl-illustration-logo_499212-704.jpg?semt=ais_hybrid&w=740" alt="Logo Matcha" className="h-[400px]"/></div>
         </section>
-        <Link to="/"></Link>
+    
       </div>
     </>
   );

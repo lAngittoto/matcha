@@ -15,6 +15,8 @@ const FindProducts = ({ onEnter }) => {
       navigate("/classic-pure"); 
      }else if (selectedOption === "FlavoredMatcha"){
       navigate("/flavored-matcha");
+     }else if(selectedOption == "DessertInspired"){
+      navigate('/dessert-inspired')
      }
 
   };
@@ -29,6 +31,7 @@ const FindProducts = ({ onEnter }) => {
         <option value="" disabled>Find Order</option>
         <option value="ClassicPure">Classic and Pure</option>
         <option value="FlavoredMatcha">Flavored Matcha</option>
+        <option value="DessertInspired">Dessert Inspired</option>
       </select>
       <button
         className="bg-[#7ED957] outline-none px-5 py-2 rounded-2xl lg:text-[1rem] text-[0.8rem] cursor-pointer active:bg-white"

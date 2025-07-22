@@ -6,9 +6,9 @@ const Footer = () => {
           <section className="flex flex-col p-7">
             <h1 className="text-2xl ml-4 cursor-default">Follow us:</h1>
             <div className="flex gap-5 bg-[#7ED957] w-[300px] p-4 rounded-2xl justify-around lg:w-[300px] md:w-[250px] md:p-2 lg:p-5 items-center">
-              <i class="fa-brands fa-facebook hover:scale-110 transition-transform duration-100 text-4xl text-blue-700"></i>
-              <i class="fa-brands fa-tiktok hover:scale-110 transition-transform duration-100 text-4xl text-black"></i>
-              <i class="fa-brands fa-square-instagram hover:scale-110 transition-transform duration-100 text-4xl text-fuchsia-900"></i>
+              <i class="fa-brands fa-facebook hover:scale-110 transition-transform duration-100 text-4xl text-blue- cursor-pointer"></i>
+              <i class="fa-brands fa-tiktok hover:scale-110 transition-transform duration-100 text-4xl text-black cursor-pointer"></i>
+              <i class="fa-brands fa-square-instagram hover:scale-110 transition-transform duration-100 text-4xl text-fuchsia-900 cursor-pointer"></i>
             </div>
           </section>
           <section className="px-7">

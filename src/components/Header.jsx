@@ -12,6 +12,7 @@ const Header = () => {
         <ul className="text-white text-[1.1rem] flex flex-row items-end gap-3 lg:text-2xl :gap-7 cursor-pointer w-full justify-around  sm:flex-row  ">
         <Link to="/" className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>Home</Link>
         <Link to="/about"  className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>About</Link>
+        <Link to="/cart" className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>Cart</Link>
         </ul>
         <div className="flex items-end gap-3 lg:gap-5">
          <FindProducts/>
