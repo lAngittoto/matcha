@@ -27,6 +27,7 @@ export const CartProvider = ({ children }) => {
         return [...prevItems, { ...product, quantity: 1 }];
       }
     });
+    
   };
 
   const increaseQuantity = (product) => {

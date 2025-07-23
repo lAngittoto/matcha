@@ -13,6 +13,7 @@ const Header = () => {
         <Link to="/" className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>Home</Link>
         <Link to="/about"  className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>About</Link>
         <Link to="/cart" className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>Cart</Link>
+        <Link to="favorite" className=' active:text-[#7ED957] text-white hover:scale-110 transition transform duration-100'>Favorites</Link>
         </ul>
         <div className="flex items-end gap-3 lg:gap-5">
          <FindProducts/>

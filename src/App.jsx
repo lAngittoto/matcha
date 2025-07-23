@@ -9,6 +9,7 @@ import ClassicPureP from './ShowProducts/ClassicPureP'
 import FlavoredMatchaP from './ShowProducts/FlavoredMatchaP'
 import DessertInspiredP from './ShowProducts/DessertInspiredP'
 import Cart from './components/Cart'
+import Favorite from './components/Favorite'
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
     <Route path="/" element={<><Home/><Footer/><MainProducts/></>} />
     <Route path='/about'element={<About/>} />
     <Route path='/cart' element= {<Cart/>}/>
+    <Route path="/favorite" element={<Favorite/>}/>
     <Route path='/classic-pure' element={<ClassicPureP/>} />
     <Route path='/flavored-matcha' element={<FlavoredMatchaP/>} />
     <Route path='/dessert-inspired' element={<DessertInspiredP/>}/>
+
       
    </Routes>
 
