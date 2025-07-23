@@ -1,8 +1,12 @@
 import Buys from "../Buttons/Buys";
 import AddCarts from "../Buttons/AddCarts";
 import Favorites from "../Buttons/Favorites";
-
+import { useCart } from "../context/CartContext";
 function FlavoredMatcha({ matchaProduct }) {
+  const {addToCart} = useCart ();
+  const handleAddCart = () =>{
+    addToCart(matchaProduct);
+  }
   return (
     <section className="bg-[#7ED957] lg:w-[330px] lg:h-[250px] rounded-2xl flex flex-row px-5 gap-2 md:h-[270px] h-[270px] md:w-[180px] sm:w-[500px]">
       <div className="flex flex-col justify-center items-center gap-3 w-[180px] ">
@@ -11,7 +15,7 @@ function FlavoredMatcha({ matchaProduct }) {
           alt="No Wifi Please Connect."
           className="object-contain"
         />
-        <AddCarts>Add cart</AddCarts>
+        <AddCarts onClick={handleAddCart}>Add cart</AddCarts>
         <Buys>₱ 300</Buys>
       </div>
       <div className="w-[180px] bg-red-50 px-5 flex  flex-col justify-center">
