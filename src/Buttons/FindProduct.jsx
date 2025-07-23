@@ -26,7 +26,7 @@ const FindProducts = ({ onEnter }) => {
       <select
         value={selectedOption}
         onChange={(e) => setSelectedOption(e.target.value)}
-        className="placeholder-black bg-[#7ED957] outline-none px-2 py-2 rounded-2xl lg:px-5 lg:text-[1rem] text-[0.8rem] w-[250px] cursor-pointer"
+        className="placeholder-black bg-[#7ED957] outline-none px-2 py-2 rounded-2xl lg:px-5 lg:text-[1rem] text-[0.8rem] w-[200px] cursor-pointer"
       >
         <option value="" disabled>Find Order</option>
         <option value="ClassicPure">Classic and Pure</option>
