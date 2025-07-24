@@ -2,10 +2,25 @@ import Buys from "../Buttons/Buys";
 import AddCarts from "../Buttons/AddCarts";
 import Favorites from "../Buttons/Favorites";
 import { useCart } from "../context/CartContext";
+import { useFavorite } from "../context/FavoriteContext";
 function FlavoredMatcha({ matchaProduct }) {
   const {addToCart} = useCart ();
+  const {favoriteItems, addToFavorites, removeFromFavorites} = useFavorite ();
   const handleAddCart = () =>{
     addToCart(matchaProduct);
+  };
+  
+  const isFavorite = favoriteItems.some(
+    (item) =>
+      item.flavor === matchaProduct.flavor &&
+    item.addedFlavor === matchaProduct.addedFlavor
+  );
+  const handleFavoriteToggle = () => {
+    if(isFavorite){
+      removeFromFavorites(matchaProduct);
+    }else{
+      addToFavorites(matchaProduct);
+    }
   }
   return (
     <section className="bg-[#7ED957] lg:w-[330px] lg:h-[250px] rounded-2xl flex flex-row px-5 gap-2 md:h-[270px] h-[270px] md:w-[180px] sm:w-[500px]">
@@ -26,7 +41,7 @@ function FlavoredMatcha({ matchaProduct }) {
           {matchaProduct.addedFlavor}
         </span>
       </div>
-      <Favorites>❤</Favorites>
+      <Favorites onClick={handleFavoriteToggle} isFavorite={isFavorite}>❤</Favorites>
     </section>
   );
 }

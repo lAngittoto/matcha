@@ -1,7 +1,7 @@
 import { useFavorite } from "../context/FavoriteContext";
 
 const Favorite = () => {
-  const { favoriteItems } = useFavorite();
+  const { favoriteItems, removeFromFavorites} = useFavorite();
 
   return (
     <div className="p-10 text-black">
@@ -15,6 +15,7 @@ const Favorite = () => {
               <img src={item.image} className="w-full h-40 object-cover mb-3" />
               <h3 className="text-xl font-semibold">{item.flavor}</h3>
               <p className="text-sm">{item.addedFlavor}</p>
+              <button onClick={()=>removeFromFavorites(item)} className="bg-red-800 text-[1rem] rounded-md px-2 text-white mt-2 cursor-pointer hover:scale-110 transition-transform duration-100">Remove</button>
             </div>
           ))}
         </div>

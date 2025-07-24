@@ -17,7 +17,7 @@ const Cart = () => {
                 className="bg-gray-200 p-4 rounded-lg flex flex-col items-center gap-2 justify-between md:text-[0.8rem] md:flex-row sm:flex-col "
               >
                 <input type="checkbox" />
-                <div className="bg-gray-100 w-[350px] flex flex-row items-center text-[0.7rem] gap-2 sm:w-[500px] sm:text-[1.1rem]">
+                <div className="bg-gray-100 w-[300px] flex flex-row items-center text-[0.6rem] gap-2 sm:w-[500px] sm:text-[1.1rem]">
                   <img src={item.image} alt={item.flavor} className="w-24" />
                   <h3 className="text-emerald-900">{item.flavor}</h3>
                   <p>{item.addedFlavor}</p>
@@ -25,13 +25,13 @@ const Cart = () => {
                 <div className="w-[200px] flex flex-row justify-around items-center">
                   <button
                     onClick={() => increaseQuantity(item)}
-                    className="bg-emerald-800 text-white px-2  text-3xl cursor-pointer w-[50px] h-[50px] items-center"
+                    className="bg-emerald-800 text-white px-2  text-3xl cursor-pointer w-[30px] h-[30px] items-center flex justify-center sm:w-[50px] sm:h-[50px]" 
                   >
                     +
                   </button>
                   <button
                     onClick={() => decreaseQuantity(item)}
-                    className="bg-emerald-800 text-white px-2  text-2xl cursor-pointer w-[50px] h-[50px]"
+                    className="bg-emerald-800 text-white px-2  text-2xl cursor-pointer w-[30px] h-[30px] sm:w-[50px] sm:h-[50px]"
                   >
                     -
                   </button>
@@ -42,20 +42,20 @@ const Cart = () => {
           </ul>
         )}
       </div>
-      <section className="bg-white p-5  w-screen fixed bottom-0 flex flex-row items-center justify-around">
+      <section className="bg-white p-5  w-screen fixed bottom-0 flex flex-row items-center justify-around ">
         <div className="space-x-4 ">
           <input type="checkbox" name="" id="" />
           <label htmlFor="">Select All</label>
-          <h1 className="text-red-800">Note: This is Cash on Delivery only.</h1>
+          <h1 className="text-red-800 text-[0.7rem] sm:text-[1rem]">Note: This is Cash on Delivery only.</h1>
         </div>
-        <div className=" px-5 py-5 flex flex-row w-[400px] justify-between">
+        <div className=" px-5 py-5 flex flex-col w-[400px] justify-around  sm:flex-row gap-2 items-center">
       
-          <button   className="bg-red-800 w-[100px] py-1 rounded-3xl text-[1.2rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 ">Delete</button>
-          <button className="bg-[#4e9622] w-[100px] py-1 rounded-3xl text-[1.2rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 ">Details</button>
+          <button   className="bg-red-800 w-[80px] py-1 rounded-3xl text-[1rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 sm:text-[1rem] sm:w-[100px]">Delete</button>
+          <button className="bg-[#4e9622] w-[80px] py-1 rounded-3xl text-[1rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 sm:text-[1.2rem] sm:w-[100px]">Details</button>
         </div>
         <div>
-          <h1 className="text-red-800">Total: </h1>
-              <button className="bg-[#4e9622] w-[100px] py-1 rounded-3xl text-[1rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 ">Check out</button>
+          <h1 className="text-red-800 sm:text-[1rem] text-[0.8rem]">Total: </h1>
+              <button className="bg-[#4e9622] w-[80px] py-1 rounded-3xl text-[0.7rem] text-white cursor-pointer hover:scale-110 transition-transform duration-100 sm:text-[1rem] sm:w-[100px]">Check out</button>
         </div>
       </section>
     </>
