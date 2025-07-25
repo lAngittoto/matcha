@@ -3,6 +3,8 @@ import AddCarts from "../Buttons/AddCarts";
 import Favorites from "../Buttons/Favorites";
 import { useCart } from "../context/CartContext";
 import { useFavorite } from "../context/FavoriteContext";
+import { FlavoredMatchaPrice } from "../Price/PriceMatcha";
+
 function FlavoredMatcha({ matchaProduct }) {
   const {addToCart} = useCart ();
   const {favoriteItems, addToFavorites, removeFromFavorites} = useFavorite ();
@@ -31,7 +33,7 @@ function FlavoredMatcha({ matchaProduct }) {
           className="object-contain"
         />
         <AddCarts onClick={handleAddCart}>Add cart</AddCarts>
-        <Buys>₱ 300</Buys>
+        <Buys>₱{FlavoredMatchaPrice}</Buys>
       </div>
       <div className="w-[180px] bg-red-50 px-5 flex  flex-col justify-center">
         <h1 className="text-[1rem font-bold md:text-[0.8rem]">
