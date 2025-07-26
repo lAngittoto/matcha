@@ -5,7 +5,7 @@ const Header = () => {
     <header className="font-sans px-5 py-5 md:px-7 md:py-7 ">
       <nav className="flex flex-col justify-between md:flex-row lg:flex-row gap-3 ">
         <div>
-          <h1 className="text-white text-5xl font-bold md:text-6xl cursor-default">
+          <h1 className="text-white text-5xl font-bold md:text-5xl cursor-default">
             Matcha<span className="text-black text-2xl">thea</span>
           </h1> 
         </div>

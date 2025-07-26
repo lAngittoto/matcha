@@ -4,10 +4,10 @@ const Favorite = () => {
   const { favoriteItems, removeFromFavorites} = useFavorite();
 
   return (
-    <div className="p-10 text-black">
-      <h1 className="text-3xl font-bold mb-5">❤️ Your Favorites</h1>
+    <div className="p-10 ">
+      <h1 className="text-3xl font-bold mb-5">❤️ </h1>
       {favoriteItems.length === 0 ? (
-        <p>No favorites yet!</p>
+        <p className="text-2xl text-amber-50">No favorites yet!</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {favoriteItems.map((item, index) => (

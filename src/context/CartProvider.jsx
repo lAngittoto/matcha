@@ -49,6 +49,11 @@ export const CartProvider = ({ children }) => {
       price: item.price || getPrice(item),
     }));
   });
+const removeFromCart = (indicesToRemove) => {
+  setCartItems((prevItems) =>
+    prevItems.filter((_, index) => !indicesToRemove.includes(index))
+  );
+};
 
   const addToCart = (product) => {
     const price = getPrice(product);
@@ -101,7 +106,7 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, increaseQuantity, decreaseQuantity }}
+      value={{ cartItems, addToCart, increaseQuantity, decreaseQuantity,removeFromCart }}
     >
       {children}
     </CartContext.Provider>
