@@ -1,4 +1,6 @@
+
 const Favorites = ({children, onClick}) => {
+    
     return(
         <button
         onClick={onClick}
