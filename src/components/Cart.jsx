@@ -80,7 +80,7 @@ const Cart = () => {
                     checked={selectedItems.includes(index)}
                     onChange={() => toggleSelectItem(index)}
                   />
-                  <div className="bg-gray-100 w-[300px] flex flex-row items-center text-[0.6rem] gap-2 sm:w-[500px] sm:text-[1.1rem]">
+                  <div className="bg-gray-100 w-[250px] flex flex-row items-center text-[0.6rem] gap-2 sm:w-[500px] sm:text-[1.1rem]">
                     <img src={item.image} alt={item.flavor} className="w-24" />
                     <h3 className="text-emerald-900">{item.flavor}</h3>
                     <p>{item.addedFlavor}</p>
